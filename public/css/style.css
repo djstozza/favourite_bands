@@ -44,7 +44,7 @@ li {
 
 .band_img {
 	width: 560px;
-	border: 0.25em solid #5E9CA0;	
+	border: 0.25em solid #5E9CA0;
 }
 
 .nav_container {
@@ -109,16 +109,17 @@ iframe {
 	top: 15px;
 	max-width: 280px;
 	z-index: 2;
-
-	
 }
 
 .elvis2 {
 	position: relative;
 	max-width: 250px;
-	top: -15px;
-	animation: rotate 1s infinite;
+	top: -14px;
 	z-index: 1;
+}
+
+.girate {
+	animation: rotate 0.6s infinite;
 }
 
 @keyframes rotate {
@@ -136,12 +137,11 @@ iframe {
 
 .elvisdance {
 	margin: auto;
-	top: 600px;
-	padding-top: 20px;
-	position: relative;
+	top: 650px;
+	left: 400px;
+	/*position: absolute;*/
 	display: inline-block;
 	height: 300px;
 	width: 300px;
-	padding-bottom: 300px;
+	padding-bottom: 250px;
 }
-
