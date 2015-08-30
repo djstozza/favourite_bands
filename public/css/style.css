@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Domine);
+
+body {
+	background-color: #73AFB6;
+	margin-left: 0;
+	color: white;
+	font-family: 'Domine', serif;
+}
+
+h1 {
+	text-decoration: underline;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+	text-align: center;
+	background-color: #73AFB6;
+}
+
+ul {
+	padding-left: 0;
+	margin-left: 0px;
+}
+
+li {
+	display: inline-block;
+	padding: 0 1em 0 1em;
+}
+
+.container {
+	margin: auto;
+	text-align: center;
+	max-width: 960px;
+}
+
+.main {
+	max-width: 600px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	border-radius: 5%;
+}
+
+.band_img {
+	width: 560px;
+	border: 0.25em solid #5E9CA0;	
+}
+
+.nav_container {
+	z-index: 1000;
+	background-color: #342800;
+	margin: auto;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	text-align: center;
+}
+
+
+.links {
+	padding-bottom: 65px;
+}
+
+
+.nav_links {
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	padding: 0.5em;
+	background-color: #E2DA99;
+	width: 200px;
+	border: 0.25em solid #5E9CA0;
+	color: #342800;
+	transition: color 0.6s ease,
+				background-color 0.6s ease,
+				border 0.6s ease;
+
+}
+
+
+.nav_links:hover {
+	color: white;
+	background-color: #5E9CA0;
+	border: 0.25em solid #E2DA99;
+
+}
+
+
+
+
+.blurb_container {
+	margin: auto;
+	color: #342800;
+	max-width: 520px;
+	background-color: #E2DA99;
+	border: 0.25em solid #5E9CA0;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+}
+
+iframe {
+	border: 0.25em solid #5E9CA0;
+}
+
+.elvis1 {
+	position: relative;
+	top: 15px;
+	max-width: 280px;
+	z-index: 2;
+
+	
+}
+
+.elvis2 {
+	position: relative;
+	max-width: 250px;
+	top: -15px;
+	animation: rotate 1s infinite;
+	z-index: 1;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(-5deg);
+	}
+	50% {
+		transform: rotate(5deg);
+	}
+
+	100% {
+		transform: rotate(-5deg);
+	}
+}
+
+.elvisdance {
+	margin: auto;
+	top: 600px;
+	padding-top: 20px;
+	position: relative;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+	padding-bottom: 300px;
+}
+

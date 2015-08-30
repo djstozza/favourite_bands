@@ -1,0 +1,14 @@
+<h2>Edit</h2>
+<form action="/bands/<%= params['id'] %>" method="post">
+	<p>
+		<input type="text" name="name" placeholder="Name" value="<%= @band.name %>">
+	</p>
+	<p>
+		<input type="text" name="image" placeholder="Image URL" value="<%= @band.image %>">
+	</p>
+	<input type="text" name="youtube" placeholder="Youtube EMBED URL" value="<%= @band.youtube %>">
+	<p><textarea class="blurb" type="textbox" name="blurb" placeholder="Blurb" rows="3"></textarea></p>
+	
+
+	<input type="submit" value= "Update">
+</form>

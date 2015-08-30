@@ -1,0 +1,35 @@
+
+<h2><%= @band['name'] %></h2>
+
+<div class="blurb_container">
+	<p><%= @band['blurb'] %></p>
+</div>
+
+	<% if @band['image'] %>
+		<p>
+			<img class="band_img" src="<%= @band.image %>">
+		</p>
+	<% else %>
+		<p>
+			Band image coming soon
+		</p>
+	<% end %>
+
+	<% if @band['youtube'] %>
+		<p>
+			<iframe width="560" height="315" src="<%= @band.youtube %>" frameborder="0" allowfullscreen></iframe>
+		</p>
+	<% else %>
+		<p>
+			Youtube link coming soon
+		</p>
+	<% end %>
+
+	<ul class="links">
+		<li>
+			<a class="nav_links" href="/bands/<%= @band.id %>/edit">Edit</a>
+		</li>
+		<li>
+			<a class ="nav_links" href="/bands/<%= @band.id %>/delete">Delete</a>
+		</li>
+	</ul>

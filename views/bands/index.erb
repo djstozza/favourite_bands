@@ -1,0 +1,9 @@
+
+<% @bands.each do | band | %>
+	<p>
+		<a class="nav_links" href="/bands/<%= band.id %>">
+			<%= band.name %>
+		</a>
+		
+	</p>
+<% end %>
